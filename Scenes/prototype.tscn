@@ -1,0 +1,144 @@
+[gd_scene load_steps=5 format=3 uid="uid://lu8hvrfyilh7"]
+
+[ext_resource type="Script" path="res://Scripts/prototype.gd" id="1_kb6ax"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_u8w1o"]
+bg_color = Color(0.619608, 0.788235, 0.905882, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kv772"]
+bg_color = Color(0.215686, 0.447059, 0.788235, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_83jr7"]
+bg_color = Color(0.0941176, 0.133333, 0.407843, 1)
+
+[node name="Prototype" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_kb6ax")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.733333, 0.847059, 0.945098, 1)
+
+[node name="GridContainer" type="GridContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -158.0
+offset_top = -140.0
+offset_right = 158.0
+offset_bottom = 140.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/h_separation = 64
+theme_override_constants/v_separation = 64
+columns = 2
+
+[node name="Collect" type="Button" parent="GridContainer"]
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0.0941176, 0.133333, 0.407843, 1)
+theme_override_colors/font_pressed_color = Color(0.619608, 0.788235, 0.905882, 1)
+theme_override_font_sizes/font_size = 48
+theme_override_styles/normal = SubResource("StyleBoxFlat_u8w1o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_kv772")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_83jr7")
+text = "Collect"
+
+[node name="Death" type="Button" parent="GridContainer"]
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0.0941176, 0.133333, 0.407843, 1)
+theme_override_colors/font_pressed_color = Color(0.619608, 0.788235, 0.905882, 1)
+theme_override_font_sizes/font_size = 48
+theme_override_styles/normal = SubResource("StyleBoxFlat_u8w1o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_kv772")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_83jr7")
+text = "Death"
+
+[node name="Hurt" type="Button" parent="GridContainer"]
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0.0941176, 0.133333, 0.407843, 1)
+theme_override_colors/font_pressed_color = Color(0.619608, 0.788235, 0.905882, 1)
+theme_override_font_sizes/font_size = 48
+theme_override_styles/normal = SubResource("StyleBoxFlat_u8w1o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_kv772")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_83jr7")
+text = "Hurt"
+
+[node name="Jump" type="Button" parent="GridContainer"]
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0.0941176, 0.133333, 0.407843, 1)
+theme_override_colors/font_pressed_color = Color(0.619608, 0.788235, 0.905882, 1)
+theme_override_font_sizes/font_size = 48
+theme_override_styles/normal = SubResource("StyleBoxFlat_u8w1o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_kv772")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_83jr7")
+text = "Jump"
+
+[node name="LevelUp" type="Button" parent="GridContainer"]
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0.0941176, 0.133333, 0.407843, 1)
+theme_override_colors/font_pressed_color = Color(0.619608, 0.788235, 0.905882, 1)
+theme_override_font_sizes/font_size = 48
+theme_override_styles/normal = SubResource("StyleBoxFlat_u8w1o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_kv772")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_83jr7")
+text = "Level Up"
+
+[node name="Lose" type="Button" parent="GridContainer"]
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0.0941176, 0.133333, 0.407843, 1)
+theme_override_colors/font_pressed_color = Color(0.619608, 0.788235, 0.905882, 1)
+theme_override_font_sizes/font_size = 48
+theme_override_styles/normal = SubResource("StyleBoxFlat_u8w1o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_kv772")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_83jr7")
+text = "Lose"
+
+[node name="Menu" type="Button" parent="GridContainer"]
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0.0941176, 0.133333, 0.407843, 1)
+theme_override_colors/font_pressed_color = Color(0.619608, 0.788235, 0.905882, 1)
+theme_override_font_sizes/font_size = 48
+theme_override_styles/normal = SubResource("StyleBoxFlat_u8w1o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_kv772")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_83jr7")
+text = "Menu"
+
+[node name="Zap" type="Button" parent="GridContainer"]
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0.0941176, 0.133333, 0.407843, 1)
+theme_override_colors/font_pressed_color = Color(0.619608, 0.788235, 0.905882, 1)
+theme_override_font_sizes/font_size = 48
+theme_override_styles/normal = SubResource("StyleBoxFlat_u8w1o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_kv772")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_83jr7")
+text = "Zap"
+
+[connection signal="pressed" from="GridContainer/Collect" to="." method="_on_collect_pressed"]
+[connection signal="pressed" from="GridContainer/Death" to="." method="_on_death_pressed"]
+[connection signal="pressed" from="GridContainer/Hurt" to="." method="_on_hurt_pressed"]
+[connection signal="pressed" from="GridContainer/Jump" to="." method="_on_jump_pressed"]
+[connection signal="pressed" from="GridContainer/LevelUp" to="." method="_on_level_up_pressed"]
+[connection signal="pressed" from="GridContainer/Lose" to="." method="_on_lose_pressed"]
+[connection signal="pressed" from="GridContainer/Menu" to="." method="_on_menu_pressed"]
+[connection signal="pressed" from="GridContainer/Zap" to="." method="_on_zap_pressed"]
